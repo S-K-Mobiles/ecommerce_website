@@ -94,9 +94,12 @@ p{
   transform: scale(1.25)
 }
 
-.categories{
-    margin: 70px 0;
+marquee{
+    background-color: black;
+    color: white;
 }
+
+
 
 .col-3{
     flex-basis: 30%;
@@ -140,6 +143,7 @@ h4{
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+    margin-top: 50px;
 }
 
 .col-4{
@@ -319,7 +323,7 @@ small{
         text-align: center;
     }
     .col-2, .col-3, .col-4{
-        flex-basis: 100%;
+        flex-basis: 50%;
     }
     .social{
         padding-left: 190px;
