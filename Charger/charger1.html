@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Cables - S K Mobiles</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Charger 1 - S K Mobiles</title>
+    <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +19,7 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <a href="index.html"><img src="logo/circle logo.jpg" width="125px"></a>
+                    <a href="../index.html"><img src="../logo/circle logo.jpg" width="125px"></a>
                 </div>
                 <nav>
                     <ul id="MenuItems">
@@ -30,22 +30,67 @@
                         <li><a href="account.html">Account</a></li>
                     </ul>
                 </nav> 
-                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
-                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()"> 
+                <img src="../images/cart.png" width="30px" height="30px">
+                <img src="../images/menu.png" class="menu-icon" onclick="menutoggle()"> 
             </div>    
         </div>
     </div>
 
 <marquee>Currently we are delivering in Bhiwani and Charkhi Dadri districts only (including all villages) with guarantee of 24 hours delivery.</marquee>
 
-    <div class="small-container">
- 
-        
- <!-------- Earphone --------->
-         <h2 class="title">Data Cables</h2>
+
+<!-------- Single Product Details -------->
+
+
+    <div class="small-container single-product">
         <div class="row">
+            <div class="col-2">
+                <img src="../images/products/charger.jpg" width="100%" height="400px" id="ProductImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="../images/products/earphone.jpg" width="100%" height="75px" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="../images/products/speaker.jpg" width="100%" height="75px" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="../images/products/datacable.jpg" width="100%" height="75px" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="../images/products/charger.jpg" width="100%" height="75px" class="small-img">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-2">
+               
+                <h1>XXX Charger</h1>
+                <h4>Rs. 50</h4>
+                <p>Quantity: 
+                <input type="number" value="1">
+                <a href="#" class="btn">Add to Cart</a></p>
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>Product Details</p>
+            </div>
+        </div>
+    </div>
+
+<!-------- title -------->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>view More</p>
+        </div>
+    </div>
+    
+
+<!-------- products -------->
+    <div class="small-container">
+         <div class="row">
             <div class="col-4">
-                <a href="#"><img src="images/products/charger.jpg"></a>
+                <a href="#"><img src="../images/products/charger.jpg"></a>
                 <h4>XXXX Charger</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -57,7 +102,7 @@
                  <p>Rs. 10.00</p>
              </div>
              <div class="col-4">
-                 <a href="#"><img src="images/products/charger.jpg"></a>
+                 <a href="#"><img src="../images/products/charger.jpg"></a>
                  <h4>XXXX Charger</h4>
                  <div class="rating">
                      <i class="fa fa-star"></i>
@@ -69,7 +114,7 @@
                  <p>Rs. 20.00</p>
             </div>
             <div class="col-4">
-                <a href="#"><img src="images/products/charger.jpg"></a>
+                <a href="#"><img src="../images/products/charger.jpg"></a>
                 <h4>XXXX Charger</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -81,7 +126,7 @@
                 <p>Rs. 5.00</p>
             </div>
             <div class="col-4">
-                <a href="#"><img src="images/products/charger.jpg"></a>
+                <a href="#"><img src="../images/products/charger.jpg"></a>
                 <h4>XXXX Charger</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -93,6 +138,8 @@
                 <p>Rs. 5.00</p>    
             </div>
         </div>
+
+       
     </div>
 
 <!-------- footer -------->
@@ -133,6 +180,28 @@
             MenuItems.style.maxHeight = "0px";    
         }
     }
+</script>
+
+
+<!-------- js for product gallery -------->
+
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function(){
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function(){
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function(){
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function(){
+        ProductImg.src = SmallImg[3].src;
+    }
+
 </script>
 
 
