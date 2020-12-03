@@ -150,7 +150,7 @@ h4{
 .col-4{
     flex-basis: 25%;
     padding: 10px;
-    min-width: 200px;
+   /* min-width: 200px;  */
     margin-bottom: 50px;
     transition: transform 0.5s;
 }
@@ -548,8 +548,11 @@ form a{
         text-align: center;
     }
     .col-2, .col-3, .col-4{
-        flex-basis: 25%;
+        flex-basis: 100%;
+	max-width: 180px;
     }
+    .col-4 img{
+	width:150px;}
     .social{
         padding-left: 190px;
     }
@@ -604,5 +607,11 @@ form a{
     .social{
         padding-left: 90px;
     }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+        max-width: 150px;
+    }
+    
+    
 }
 
