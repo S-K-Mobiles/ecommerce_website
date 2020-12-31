@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-in">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulove Sitar - S K Mobiles</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="../index.html"><img src="../logo/circle logo.jpg" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../products.html">Product</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact Us</a></li>
+                        <li><a href="../account.html">Account</a></li>
+                    </ul>
+                </nav> 
+                <a href="../cart.html"><img src="../images/cart.png" width="30px" height="30px"></a>
+                <img src="../images/menu.png" class="menu-icon" onclick="menutoggle()">  
+            </div>    
+        </div>
+    </div>
+
+<marquee>Currently we are delivering in Bhiwani and Charkhi Dadri districts only (including all villages) with guarantee of 24 hours delivery.</marquee>
+
+
+<!-------- Single Product Details -------->
+
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/14Ulove Sitar-1.JPG" width="100%" height="400px" id="ProductImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/14Ulove Sitar-2.JPG" width="100%" height="75px" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/14Ulove Sitar-3.JPG" width="100%" height="75px" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/14Ulove Sitar-4.JPG" width="100%" height="75px" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/14Ulove Sitar-1.JPG" width="100%" height="75px" class="small-img">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-2">
+               
+                <h1>Ulove Sitar Earphones</h1>
+                <h4>Rs. 79.00</h4>
+                <p>Quantity: 
+                <input type="number" value="1">
+                <a href="#" class="btn">Add to Cart</a></p>
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>Full range super sound | Lightweight flexible for maximum comfort | Best bass | Noise cancellation                    
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-------- footer -------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    
+                </div>
+            </div>
+            <hr>
+            <div class="social">
+                <a class="fa fa-facebook" href="https://www.facebook.com/" target="_blank"></a>
+                <a class="fa fa-instagram" href="https://www.instagram.com/" target="_blank"></a>
+                <a class="fa fa-twitter" href="https://www.twitter.com/" target="_blank"></a>
+            </div>
+            <p class="copyright">© Copyright 2020-21 : S K Mobiles</p>
+        </div>
+    </div>
+    
+
+<!-------- js for toggle menu -------->
+
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";    
+        }
+    }
+</script>
+
+
+<!-------- js for product gallery -------->
+
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function(){
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function(){
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function(){
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function(){
+        ProductImg.src = SmallImg[3].src;
+    }
+
+</script>
+
+
+</body>
+</html>
